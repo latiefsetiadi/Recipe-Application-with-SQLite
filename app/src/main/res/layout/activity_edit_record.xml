@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    tools:context=".EditRecordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Data"
+            android:id="@+id/display_text"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/foodImage"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/display_text"
+            android:padding="2dp"
+            android:src="@drawable/ic_addphoto"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameChef"
+            android:layout_below="@+id/foodImage"
+            android:hint="Nama Chef"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameFood"
+            android:layout_below="@+id/nameChef"
+            android:hint="Nama Makanan"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ingeredients"
+            android:layout_below="@+id/nameFood"
+            android:hint="Bahan Makanan"
+            android:padding="10dp"
+            android:minHeight="100dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="start"
+            android:background="@drawable/background"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cara"
+            android:layout_below="@+id/ingeredients"
+            android:hint="Cara Memasak"
+            android:minHeight="200dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonSimpan"
+            android:layout_below="@+id/cara"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backgroud_btn"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

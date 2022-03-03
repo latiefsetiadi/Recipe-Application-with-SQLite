@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    tools:context=".Detail_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama resep"
+            android:id="@+id/textResep"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/foodImage"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/textResep"
+            android:padding="2dp"
+            android:src="@drawable/ic_addphoto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:text="Nama Chef : "
+            android:id="@+id/textChef"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@id/foodImage">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nmchef"
+            android:text="Ini Nama Chef"
+            android:layout_below="@+id/foodImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="137dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alat atau Bahan :"
+            android:id="@+id/txting"
+            android:layout_below="@+id/textChef"
+            android:layout_marginLeft="27dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ingeredients"
+            android:layout_below="@+id/txting"
+            android:hint="Bahan Makanan Kosong"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="start"
+            android:focusable="false"
+            android:background="@drawable/background"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Langkah Pembuatan :"
+            android:id="@+id/txtpemb"
+            android:layout_below="@+id/ingeredients"
+            android:layout_marginLeft="27dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/step"
+            android:layout_below="@+id/txtpemb"
+            android:hint="Langkah Kosong"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="20dp"
+            android:focusable="false"
+            android:layout_marginRight="20dp"
+            android:gravity="start"
+            android:background="@drawable/background"/>
+    </RelativeLayout>
+
+</ScrollView>

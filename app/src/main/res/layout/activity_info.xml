@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    tools:context=".info">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="My Recipe"
+           android:textSize="25dp"
+           android:id="@+id/Judul"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:layout_centerHorizontal="true"
+           />
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/chef"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/foto"
+            android:layout_below="@+id/Judul"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:id="@+id/versi"
+            android:layout_below="@+id/foto"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:id="@+id/deskripsi"
+            android:layout_below="@+id/versi"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggota Kelompok :"
+            android:textSize="15dp"
+            android:id="@+id/agtklpk"
+            android:layout_below="@+id/deskripsi"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Latief Setiadi (A11.2018.11376)"
+            android:id="@+id/agtklpk1"
+            android:layout_below="@+id/agtklpk"
+            android:layout_marginLeft="25dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Wahid Amaludin (A11.2018.11359)"
+            android:id="@+id/agtklpk2"
+            android:layout_below="@+id/agtklpk1"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.Andika Suriya B.S (A11.2018.11368)"
+            android:id="@+id/agtklpk3"
+            android:layout_below="@+id/agtklpk2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.Indra Cahya Dwi P (A11.2018.11374)"
+            android:id="@+id/agtklpk4"
+            android:layout_below="@+id/agtklpk3"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.Muhammad Abidin (A11.2018.11049)"
+            android:id="@+id/agtklpk5"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/agtklpk4"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"/>
+    </RelativeLayout>
+</ScrollView>
